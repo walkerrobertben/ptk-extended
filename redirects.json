@@ -1,0 +1,15 @@
+[
+	{
+		"id": 1,
+		"priority": 1,
+		"action": {
+			"type": "redirect",
+			"redirect": {
+				"extensionPath": "/resources/booking_table.js"
+			}
+		},
+		"condition": {
+			"urlFilter": "https://ptkconnect.com/static/core/js/main/booking_table.ad378c33ce41.js"
+		}
+	}
+]

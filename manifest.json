@@ -3,8 +3,44 @@
 	"name": "PTK Extended",
 	"description": "",
 	"version": "1.0",
+
+	"icons": {
+		"256": "assets/icon.jpg"
+	},
+
+	"permissions": [
+		"declarativeNetRequestWithHostAccess"
+	],
+
+	"host_permissions": [
+		"https://ptkconnect.com/*"
+	],
+
 	"action": {
-		"default_icon": "icon.jpg",
-		"default_popup": "popup/index.html"
-	}
+		"default_icon": "assets/icon.jpg"
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["https://ptkconnect.com/*"],
+			"js": ["inject/index.js"]
+		}
+	],
+
+	"declarative_net_request": {
+		"rule_resources": [{
+			"id": "redirects",
+      		"path": "redirects.json",
+			"enabled": true
+		}]
+	},
+
+	"web_accessible_resources": [
+		{
+			"matches": ["https://ptkconnect.com/*"],
+			"resources": [
+				"resources/*"
+			]
+		}
+	]
 }
