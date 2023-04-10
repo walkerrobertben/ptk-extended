@@ -5,7 +5,8 @@
 	"version": "1.0",
 
 	"icons": {
-		"256": "assets/icon.jpg"
+		"128": "assets/icon128.png",
+		"256": "assets/icon256.png"
 	},
 
 	"permissions": [
@@ -17,7 +18,7 @@
 	],
 
 	"action": {
-		"default_icon": "assets/icon.jpg"
+		"default_icon": "assets/icon256.png"
 	},
 
 	"content_scripts": [
