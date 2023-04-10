@@ -1,0 +1,10 @@
+{
+	"manifest_version": 3,
+	"name": "PTK Extended",
+	"description": "",
+	"version": "1.0",
+	"action": {
+		"default_icon": "icon.jpg",
+		"default_popup": "popup/index.html"
+	}
+}
